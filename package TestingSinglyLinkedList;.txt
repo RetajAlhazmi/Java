@@ -1,0 +1,27 @@
+package TestingSinglyLinkedList;
+
+public class TestingSinglyLinkedList {
+
+    public static void main(String[] args) {
+        System.out.println("List of integers");
+        SinglyLinkedList<Integer> intSlist = new SinglyLinkedList<>();
+        intSlist.addFirst(400);
+        intSlist.addFirst(300);
+        intSlist.addFirst(200);
+        intSlist.addFirst(100);
+        System.out.println("Forward Traversal: ");
+        intSlist.ForwardTraversal();
+        System.out.println();
+        SinglyLinkedList<String> strSList = new SinglyLinkedList<>();
+        strSList.addLast("JKL");
+        strSList.addLast("GHI");
+        strSList.addLast("DEF");
+        strSList.addLast("ABC");
+        System.out.println("List of Strings ");
+        System.out.println("Forward Traversal: ");
+        strSList.ForwardTraversal();
+        System.out.println();
+        System.out.println("Last element in intSList: " + intSlist.TailElement());
+        System.out.println("Last element in intSList: " + strSList.TailElement());
+    }
+}
