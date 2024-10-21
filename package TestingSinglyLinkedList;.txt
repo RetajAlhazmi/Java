@@ -1,30 +1,30 @@
-
 //name: Retaj Hussain Alhazmi
 //ID: 445006594
-package TestingSinglyLinkedList;
-
-public class TestingSinglyLinkedList {
-
-    public static void main(String[] args) {
-        System.out.println("List of integers");
-        SinglyLinkedList<Integer> intSlist = new SinglyLinkedList<>();
-        intSlist.addFirst(400);
-        intSlist.addFirst(300);
-        intSlist.addFirst(200);
-        intSlist.addFirst(100);
-        System.out.println("Forward Traversal: ");
-        intSlist.ForwardTraversal();
-        System.out.println();
-        SinglyLinkedList<String> strSList = new SinglyLinkedList<>();
-        strSList.addLast("JKL");
-        strSList.addLast("GHI");
-        strSList.addLast("DEF");
-        strSList.addLast("ABC");
-        System.out.println("List of Strings ");
-        System.out.println("Forward Traversal: ");
-        strSList.ForwardTraversal();
-        System.out.println();
-        System.out.println("Last element in intSList: " + intSlist.TailElement());
-        System.out.println("Last element in intSList: " + strSList.TailElement());
-    }
+// Java code for linearly search x in arr[]. If x
+// is present then return its location, otherwise
+// return -1
+class LinearSearch {
+// This function returns index of element x in arr[]
+static int search(int arr[], int n, int x)
+}
+for (int i = 0; i < n; i++) {
+// Return the index of the element if the element
+// is found
+if(arr[i]==x)
+return i;
+}
+// return -1 if the element is not found
+return -1;
+}
+public static void main(String[] args)
+{
+int[] arr = { 3, 4, 1, 7, 5 };
+int n = arr.length;
+int x = 10;
+int index = search(arr, n, x);
+if (index == -1)
+System.out.println("Element is not present in the array");
+else
+System.out.println("Element found at position " + index);
+}
 }
